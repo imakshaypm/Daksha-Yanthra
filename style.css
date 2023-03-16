@@ -33,6 +33,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
+  background-blend-mode: screen;
 }
 
 /* .main-wrapper {
