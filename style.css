@@ -8,6 +8,10 @@
     inset 0 0 0.4vw 0.6vw #00e5ff, inset 0 0 1vw 0.4vw #26c6da;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 @font-face {
   font-family: NewAgeVintage;
   src: url("fonts/NewAgeVintage/NewAgeVintageRegular.otf") format("opentype");
@@ -69,7 +73,7 @@ body {
 }
 
 .confetti {
-  /* position: absolute; */
+  position: relative;
   width: 100%;
   height: auto;
   z-index: 10;
@@ -117,12 +121,40 @@ body {
   margin-left: 12%;
 }
 
-.promoplaceholder {
-  /* position: absolute; */
-  margin-top: -50%;
-  width: 83%;
-  height: auto;
-  margin-left: 8.5%;
+.wedland {
+  width: 20%;
+  margin-left: 37%;
+  margin-top: -105%;
+}
+
+.codesvera {
+  width: 13%;
+  margin-left: 33%;
+  margin-top: -93%;
+}
+
+.learningmindz {
+  width: 13%;
+  margin-left: 1%;
+  margin-top: -93%;
+}
+
+.pooja {
+  width: 6%;
+  margin-top: -70%;
+  margin-left: -21.5%;
+}
+
+.arabian {
+  width: 8%;
+  margin-top: -70%;
+  margin-left: 2%;
+}
+
+.pace {
+  width: 8%;
+  margin-top: -55%;
+  margin-left: -17%;
 }
 
 footer {
