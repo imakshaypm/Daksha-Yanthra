@@ -1,5 +1,15 @@
+const cursor = document.querySelector('.cursor');
+const ring = document.querySelectorAll('.ring');
+
 $(window).on("load", function () {
     $(".loading-page").fadeOut("fast");
+    window.addEventListener('mousemove', (event) => {
+        const [x, y] = [event.clientX, event.clientY];
+        cursor.style.left = event.clientX + 'px';
+        cursor.style.top = event.clientY + "px";
+        gsap.to(ring, { top: y, left: x, delay: .001, ease: 'Power3.inOut', stagger: .05 })
+
+    })
     // document.getElementById('welcome-msg').style.display = "block";
     // var vid = document.getElementById('main-video')
     // setTimeout(function () {

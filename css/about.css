@@ -27,6 +27,7 @@ body {
 
 body {
   font-family: "NewAgeVintage";
+  cursor: url(../images/mouse.png), auto;
   scrollbar-color: var(--text) rgb(71, 71, 71);
   /* overflow-x: hidden; */
   background: url(../images/Bgblack.webp);
@@ -34,6 +35,28 @@ body {
   background-position: center;
   background-attachment: scroll;
   background-blend-mode: screen;
+}
+
+.cursor {
+  height: 7px;
+  width: 7px;
+  border-radius: 100%;
+  background: white;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: translate(-50%, -50%); */
+}
+
+.ring {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border: 3px solid white;
+  border-radius: 100%;
+  transform: translate(10%, 10%);
+
 }
 
 ::-webkit-scrollbar {
